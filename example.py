@@ -8,7 +8,8 @@ import plotly.express as px
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv')
 
 # Initialize the app
-app = Dash()
+app = Dash(__name__)
+server = app.server
 
 # App layout
 app.layout = [
